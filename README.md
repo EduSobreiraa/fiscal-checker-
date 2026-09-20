@@ -26,6 +26,8 @@ Os arquivos enviados e os relatórios ficam em uma pasta de dados do **usuário 
 
 Para instalar em outra máquina, basta copiar o projeto, instalar as dependências e iniciar a interface com o usuário que utilizará os dados. O responsável pela instalação pode configurar uma pasta base diferente com um **caminho absoluto**, por exemplo `FISCAL_DATA_ROOT=/dados/fiscal-checker ./scripts/start-ui.sh`. As configurações antigas `FISCAL_UPLOAD_ROOT` e `FISCAL_OUTPUT_ROOT` continuam disponíveis para definir as duas pastas separadamente. Uma pasta compartilhada entre usuários exige permissões de acesso adequadas; esta versão local ainda não tem contas nem separação de dados por usuário no navegador.
 
+No Streamlit Community Cloud, aponte o arquivo principal para `app.py`. A configuração de rede da nuvem é usada automaticamente; o iniciador local continua limitado a `127.0.0.1`. O armazenamento local do Community Cloud não é persistente, e este protótipo ainda não separa dados entre visitantes. Use apenas dados sintéticos na implantação pública e baixe os resultados gerados.
+
 ## Caso de demonstração e avaliação
 
 O [caso CSV](data/synthetic/case-2026-08-comercial-modelo-csv/README.md) contém seis documentos, um evento, escrituração e um gabarito de dez divergências. O relatório compara automaticamente as ocorrências encontradas com esse gabarito: previstas, detectadas, ausentes, extras e com fonte de evidência. O [guia dos CSVs](docs/caso-csv.md) explica os arquivos.

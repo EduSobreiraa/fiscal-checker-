@@ -22,9 +22,9 @@ ROOT = Path(__file__).resolve().parent
 DEMO = ROOT / "data/synthetic/case-2026-08-comercial-modelo-csv"
 DATA_ROOT, UPLOAD_ROOT, OUTPUT_ROOT = storage_paths()
 PROFILE = DEMO / "config/tax_profile.json"
-st.session_state.setdefault("page", "home")
 
 st.set_page_config(page_title="Fiscal Checker", page_icon="🟢", layout="wide", initial_sidebar_state="expanded")
+st.session_state.setdefault("page", "home")
 st.markdown("""
 <style>
 .block-container {max-width: 1160px; padding-top: 2rem; padding-bottom: 4rem;}
@@ -64,7 +64,7 @@ with st.sidebar:
     st.markdown("**Fluxo**")
     st.markdown("1. Reunir documentos\n2. Conferir integridade\n3. Analisar divergências\n4. Preparar a revisão com o cliente")
     st.divider()
-    st.caption("Uso local · dados permanecem neste computador · sem envio a APIs externas")
+    st.caption("Protótipo sem contas de usuário · use apenas dados sintéticos em implantações públicas")
 
 if st.session_state.page == "home":
     st.markdown('<p class="section-label">Como deseja começar?</p>', unsafe_allow_html=True)
