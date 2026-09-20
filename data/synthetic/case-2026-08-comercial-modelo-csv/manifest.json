@@ -1,0 +1,45 @@
+{
+  "case_id": "case-2026-08-comercial-modelo-csv",
+  "company_id": "empresa-ficticia-001",
+  "competencia": "2026-08",
+  "collected_at": "2026-09-25T12:00:00Z",
+  "source": "synthetic",
+  "files": [
+    {
+      "path": "raw/cadastros/participantes.csv",
+      "type": "participantes_csv",
+      "sha256": "da1c216b00b910d1e625d103800a4e8750ab96ca3f7c6d58c1f1cc0320cced17",
+      "size_bytes": 119
+    },
+    {
+      "path": "raw/cadastros/produtos.csv",
+      "type": "produtos_csv",
+      "sha256": "24bb1cbd49175ba7a17630cd16c1e36b073d00b5f9dc306a00d142cea57ca2c4",
+      "size_bytes": 77
+    },
+    {
+      "path": "raw/declaracoes/valor_informado.csv",
+      "type": "valor_informado_csv",
+      "sha256": "5b8303a0b49ca0218b270109b6f4662b9e680cbe921bf9e4ab19a99370ae7e84",
+      "size_bytes": 51
+    },
+    {
+      "path": "raw/escrituracao/lancamentos.csv",
+      "type": "escrituracao_reduzida_csv",
+      "sha256": "d36cb56e9da85c296092089c6e4b92c0256aec26715c89740bacc6e5248529a5",
+      "size_bytes": 512
+    },
+    {
+      "path": "raw/notas/eventos.csv",
+      "type": "nfe_event_csv",
+      "sha256": "7cf7a06ef30dcc77994406567617144aea2f148493492f959c073ea4919c92f0",
+      "size_bytes": 131
+    },
+    {
+      "path": "raw/notas/nfe.csv",
+      "type": "nfe_csv",
+      "sha256": "cee136a6b80a25bbca2f8b2cd703633c03750ea214d00bd85b006d57f9d160a0",
+      "size_bytes": 1299
+    }
+  ]
+}

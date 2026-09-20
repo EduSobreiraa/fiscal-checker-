@@ -1,0 +1,17 @@
+{
+  "profile_id": "synthetic-2026-08-v1",
+  "fictional_parameters": true,
+  "pis_rate": "0.01",
+  "cofins_rate": "0.02",
+  "sale_cfops": [
+    "5102"
+  ],
+  "return_cfops": [
+    "1202"
+  ],
+  "sale_base_policy": "document_total",
+  "returns_policy": "deduct_document_total",
+  "rounding": "ROUND_HALF_UP",
+  "currency_scale": "0.01",
+  "note": "Taxas escolhidas apenas para testar o software; não representam orientação tributária."
+}

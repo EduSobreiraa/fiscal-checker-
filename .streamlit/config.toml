@@ -1,0 +1,27 @@
+[server]
+address = "127.0.0.1"
+port = 8501
+maxUploadSize = 10
+headless = true
+showEmailPrompt = false
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[theme]
+base = "light"
+primaryColor = "#347A54"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F9F3"
+textColor = "#173A29"
+borderColor = "#CDE5D2"
+baseRadius = "medium"
+buttonRadius = "medium"
+
+[theme.sidebar]
+backgroundColor = "#F1F9F3"
+secondaryBackgroundColor = "#FFFFFF"

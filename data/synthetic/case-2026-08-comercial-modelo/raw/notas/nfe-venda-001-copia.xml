@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe29260899999999000199550010000000011000000010" versao="4.00">
+      <ide>
+        <cUF>29</cUF>
+        <natOp>OPERACAO SINTETICA</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>1</nNF>
+        <dhEmi>2026-08-05T10:00:00-03:00</dhEmi>
+        <tpNF>1</tpNF>
+      </ide>
+      <emit>
+        <CNPJ>99999999000199</CNPJ>
+        <xNome>Comercial Modelo Bahia Ltda.</xNome>
+      </emit>
+      <dest>
+        <CNPJ>88888888000188</CNPJ>
+        <xNome>Cliente Ficticio Ltda.</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>PROD-001</cProd>
+          <xProd>Produto sintetico A</xProd>
+          <NCM>00000000</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>1250.00</vUnCom>
+          <vProd>1250.00</vProd>
+        </prod>
+      </det>
+      <total>
+        <ICMSTot>
+          <vProd>1250.00</vProd>
+          <vNF>1250.00</vNF>
+        </ICMSTot>
+      </total>
+    </infNFe>
+  </NFe>
+  <protNFe>
+    <infProt>
+      <chNFe>29260899999999000199550010000000011000000010</chNFe>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado (simulacao)</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

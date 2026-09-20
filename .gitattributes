@@ -1,0 +1,4 @@
+# Os manifests usam SHA-256 dos bytes originais dos casos de teste.
+# Preserva XML e CSV exatamente iguais ao baixar o projeto em outros sistemas.
+data/synthetic/** -text
+cases/** -text

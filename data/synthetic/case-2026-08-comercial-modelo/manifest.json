@@ -1,0 +1,75 @@
+{
+  "case_id": "case-2026-08-comercial-modelo",
+  "company_id": "empresa-ficticia-001",
+  "competencia": "2026-08",
+  "collected_at": "2026-09-25T12:00:00Z",
+  "source": "synthetic",
+  "files": [
+    {
+      "path": "raw/cadastros/participantes.csv",
+      "type": "participantes_csv",
+      "sha256": "da1c216b00b910d1e625d103800a4e8750ab96ca3f7c6d58c1f1cc0320cced17",
+      "size_bytes": 119
+    },
+    {
+      "path": "raw/cadastros/produtos.csv",
+      "type": "produtos_csv",
+      "sha256": "24bb1cbd49175ba7a17630cd16c1e36b073d00b5f9dc306a00d142cea57ca2c4",
+      "size_bytes": 77
+    },
+    {
+      "path": "raw/declaracoes/valor_informado.json",
+      "type": "valor_informado_json",
+      "sha256": "4cd38310ea2bc5873d0d4aea61433d5a04b02981132a267966653259ef9f6d40",
+      "size_bytes": 112
+    },
+    {
+      "path": "raw/escrituracao/lancamentos.csv",
+      "type": "escrituracao_reduzida_csv",
+      "sha256": "d36cb56e9da85c296092089c6e4b92c0256aec26715c89740bacc6e5248529a5",
+      "size_bytes": 512
+    },
+    {
+      "path": "raw/notas/evento-cancelamento-003.xml",
+      "type": "nfe_event_xml",
+      "sha256": "2f0ba2c81dc1711fb8edef1e7a44c97c96855d02360792fc149ad0ebf804aaf6",
+      "size_bytes": 479
+    },
+    {
+      "path": "raw/notas/nfe-cancelada-003.xml",
+      "type": "nfe_xml",
+      "sha256": "0971f38a7846a305053dfce23787a9c5c0bed747ff73654d19a5e472f2a7a6e1",
+      "size_bytes": 1324
+    },
+    {
+      "path": "raw/notas/nfe-devolucao-004.xml",
+      "type": "nfe_xml",
+      "sha256": "a29eb99658d69f746473b4b6b1b34cdd03a0b34680659ffd86eb58ce7853cb98",
+      "size_bytes": 1324
+    },
+    {
+      "path": "raw/notas/nfe-fora-periodo-005.xml",
+      "type": "nfe_xml",
+      "sha256": "8c27e3e063154c50777c2446f844f5854314236b8d4c6647076626b5e97abe60",
+      "size_bytes": 1324
+    },
+    {
+      "path": "raw/notas/nfe-venda-001-copia.xml",
+      "type": "nfe_xml",
+      "sha256": "b7fabf965ffa36f840bb99d0be39d4391992c36a29833e897ac780f43f0ccb88",
+      "size_bytes": 1328
+    },
+    {
+      "path": "raw/notas/nfe-venda-001.xml",
+      "type": "nfe_xml",
+      "sha256": "b7fabf965ffa36f840bb99d0be39d4391992c36a29833e897ac780f43f0ccb88",
+      "size_bytes": 1328
+    },
+    {
+      "path": "raw/notas/nfe-venda-002.xml",
+      "type": "nfe_xml",
+      "sha256": "af00b18de65957eba635b03de693346c046e9793f1e5f403a223a5e453d45e58",
+      "size_bytes": 1324
+    }
+  ]
+}

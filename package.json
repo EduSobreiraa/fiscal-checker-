@@ -1,0 +1,13 @@
+{
+  "name": "coletor-nfe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node src/cli.mjs",
+    "check:case": "node scripts/check-case.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.11.1"
+  }
+}

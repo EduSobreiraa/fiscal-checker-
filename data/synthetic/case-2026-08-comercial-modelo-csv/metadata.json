@@ -1,0 +1,17 @@
+{
+  "case_id": "case-2026-08-comercial-modelo-csv",
+  "company_id": "empresa-ficticia-001",
+  "company_name": "Comercial Modelo Bahia Ltda.",
+  "company_tax_id": "99999999000199",
+  "competencia": "2026-08",
+  "reference_date": "2026-09-25",
+  "source": "synthetic",
+  "expected_sources": [
+    "nfe_csv",
+    "nfe_event_csv",
+    "escrituracao_reduzida_csv",
+    "produtos_csv",
+    "participantes_csv",
+    "valor_informado_csv"
+  ]
+}
