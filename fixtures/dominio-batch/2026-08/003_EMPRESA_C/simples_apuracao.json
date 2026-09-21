@@ -1,0 +1,1 @@
+{"document_type":"SIMPLES_APURACAO","company":{"id":"empresa-c","code":"003","name":"EMPRESA C","document":"33333333000133"},"period":"2026-08","data":{"revenue":{"currentPeriod":42000,"returns":0,"cancellations":0},"simples":{"annexes":["I"],"calculatedAmount":2730}},"extraction":{"status":"complete","warnings":[]}}

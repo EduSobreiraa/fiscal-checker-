@@ -5,6 +5,7 @@
   "scripts": {
     "collect": "node src/cli.mjs",
     "check:case": "node scripts/check-case.mjs",
+    "assess": "python3 -m fiscal_engine.assessment",
     "test": "node --test"
   },
   "dependencies": {

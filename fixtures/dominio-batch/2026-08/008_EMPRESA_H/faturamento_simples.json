@@ -1,0 +1,1 @@
+{"document_type":"FATURAMENTO_SIMPLES","company":{"id":"empresa-h","name":"EMPRESA H"},"period":"2026-08","data":{"revenue":{"currentPeriod":37000,"returns":0,"cancellations":1500}},"extraction":{"status":"complete","warnings":[]}}

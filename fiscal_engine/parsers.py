@@ -112,6 +112,8 @@ def parse_csv(data: bytes, required_fields: set[str], source_path: str) -> list[
     for line, row in enumerate(reader, start=2):
         if None in row:
             raise ValueError(f"CSV com colunas excedentes na linha {line}")
+        if any(value is None for value in row.values()):
+            raise ValueError(f"CSV com campos ausentes na linha {line}")
         rows.append({**row, "source_path": source_path, "source_line": line})
     return rows
 

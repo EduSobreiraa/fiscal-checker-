@@ -22,7 +22,7 @@ A [API da Thomson Reuters](https://developerportal.thomsonreuters.com/onvio-br-a
 4. O analista vê uma **fila de exceções**, agrupada por empresa e competência: nota ausente, cancelada, duplicada, sem escrituração, valor divergente ou tipo ainda não suportado. Os documentos regulares avançam juntos para a rotina de importação já usada pelo escritório.
 5. O relatório compara **capturados pela Jettax**, **entregues ao ONVIO/Domínio**, **importados/escriturados** e **pendentes**. Uma nota só é marcada como concluída após confirmação do destino, não apenas por estar no ZIP.
 
-O protótipo já agrupa as ocorrências do caso sintético por documento e gera `triagem.csv` e `previa-cliente.txt` para revisão. Ainda recebe CSVs isolados e só processa NF-e modelo 55 do caso sintético; **a entrada ZIP, a leitura de outros modelos e a conciliação com Jettax/ONVIO ainda precisam ser implementadas**.
+O protótipo agora possui cadastro de empresas, inventário por competência e versão, importação manual de CSVs e XMLs compatíveis, análise de múltiplas empresas e fila persistente de tratamento. O Domínio é a referência externa; por ora, arquivos exportados devem seguir o modelo CSV documentado. O [fluxo implementado](modos-de-operacao.md) detalha a cobertura, o armazenamento sem cópias do inventário por execução e os limites. **A entrada ZIP, outros modelos fiscais, o conversor do CSV nativo do Domínio e a integração direta com JettaX/ONVIO ainda precisam ser implementados**.
 
 ## Cuidados que mudam o resultado do lote
 

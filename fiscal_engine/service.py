@@ -14,7 +14,8 @@ from .reports import build_result, write_outputs
 from .triage import build_review_queue
 
 
-def run_case(input_dir: Path, output_dir: Path, competencia: str, config_dir: Path | None = None) -> dict:
+def analyze_case(input_dir: Path, competencia: str, config_dir: Path | None = None) -> dict:
+    """Analisa em memória; a interface decide quais resultados precisa persistir."""
     normalized = normalize_case(input_dir, competencia)
     config = config_dir or input_dir / "config"
     company_file = config / "company_profile.json"
@@ -33,5 +34,10 @@ def run_case(input_dir: Path, output_dir: Path, competencia: str, config_dir: Pa
         profile_source: hashlib.sha256(tax_file.read_bytes()).hexdigest() if tax_file.exists() else None,
     }
     result["evaluation"] = evaluate(input_dir, occurrences)
-    write_outputs(output_dir, normalized, result)
+    return result
+
+
+def run_case(input_dir: Path, output_dir: Path, competencia: str, config_dir: Path | None = None) -> dict:
+    result = analyze_case(input_dir, competencia, config_dir)
+    write_outputs(output_dir, result["normalized"], result)
     return result

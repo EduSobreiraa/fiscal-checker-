@@ -1,0 +1,1 @@
+{"document_type":"SIMPLES_APURACAO","company":{"id":"empresa-b","code":"002","name":"EMPRESA B","document":"22222222000122"},"period":"2026-08","data":{"revenue":{"currentPeriod":50000,"rbt12":510000,"returns":0,"cancellations":0},"simples":{"annexes":["III"],"calculatedAmount":4800,"effectiveRate":0.096}},"extraction":{"status":"complete","warnings":[]}}

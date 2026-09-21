@@ -1,0 +1,1 @@
+{"document_type":"SIMPLES_APURACAO","company":{"id":"empresa-d","code":"004","name":"EMPRESA D","document":"44444444000144"},"period":"2026-08","data":{"revenue":{"currentPeriod":30000,"rbt12":300000,"returns":0,"cancellations":0},"simples":{"annexes":["I"],"calculatedAmount":1800}},"extraction":{"status":"complete","warnings":[]}}

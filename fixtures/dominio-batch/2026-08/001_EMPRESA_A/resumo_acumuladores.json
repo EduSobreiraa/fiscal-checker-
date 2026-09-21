@@ -1,0 +1,1 @@
+{"document_type":"RESUMO_ACUMULADORES","company":{"id":"empresa-a","name":"EMPRESA A"},"period":"2026-08","data":{"accumulators":[{"code":"RECEITA_BRUTA","description":"Receita bruta","category":"receita","amount":50000}]},"extraction":{"status":"complete","warnings":[]}}

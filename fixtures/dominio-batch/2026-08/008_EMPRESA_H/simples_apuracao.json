@@ -1,0 +1,1 @@
+{"document_type":"SIMPLES_APURACAO","company":{"id":"empresa-h","code":"008","name":"EMPRESA H","document":"88888888000188"},"period":"2026-08","data":{"revenue":{"currentPeriod":37000,"rbt12":370000,"returns":0,"cancellations":1000},"simples":{"annexes":["III"],"calculatedAmount":2960}},"extraction":{"status":"complete","warnings":[]}}
