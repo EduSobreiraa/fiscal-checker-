@@ -37,10 +37,36 @@ def _details(companies: list[dict]) -> None:
 
 
 def simples_assessment_page(fixtures: Path) -> None:
-    st.title("Conferência rápida de apurações do Simples")
-    st.write("Informe a pasta raiz da competência. O sistema localiza os relatórios de cada empresa, extrai os dados disponíveis e separa o que não teve exceções detectadas do que precisa de revisão.")
-    st.info("A ferramenta confere consistência entre relatórios; ela não recalcula nem certifica a apuração tributária.")
+    st.markdown(
+        """
+        <section class="hero" aria-label="Apresentação da conferência">
+          <div class="hero-copy">
+            <p class="hero-context">Conferência de apurações do Simples Nacional</p>
+            <h1>Antes do DAS, veja onde a competência pede atenção.</h1>
+            <p>Leia os relatórios do Domínio de todas as empresas de uma vez, encontre divergências objetivas e deixe a revisão humana apenas para o que realmente precisa dela.</p>
+          </div>
+          <aside class="hero-ledger" aria-label="Como a conferência funciona">
+            <p class="ledger-title">Leitura do lote</p>
+            <div class="ledger-step"><strong>1</strong><span>Localize os relatórios da competência.</span></div>
+            <div class="ledger-step"><strong>2</strong><span>Compare os valores e documentos disponíveis.</span></div>
+            <div class="ledger-step"><strong>3</strong><span>Direcione somente as exceções para revisão.</span></div>
+          </aside>
+        </section>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        """
+        <section class="explainer">
+          <h2>Uma pausa de conferência antes da entrega.</h2>
+          <p>O DAS reúne em uma única guia os tributos da empresa no Simples. Sua apuração parte das receitas e das informações da competência. Esta ferramenta não emite a guia nem recalcula impostos: ela compara os relatórios de apuração, faturamento e acumuladores para tornar visíveis divergências e ausências que merecem uma decisão da equipe contábil.</p>
+        </section>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.info("A ferramenta verifica a consistência entre os relatórios disponíveis; ela não recalcula tributos, não substitui o Domínio e não certifica a apuração tributária.")
 
+    st.markdown('<h2 class="section-heading">Comece por uma competência</h2><p class="section-intro">Informe a pasta que contém uma subpasta para cada empresa do lote.</p>', unsafe_allow_html=True)
     with st.form("assessment_input"):
         path_value = st.text_input(
             "Diretório raiz da competência",
@@ -59,7 +85,7 @@ def simples_assessment_page(fixtures: Path) -> None:
 
     result = st.session_state.get("simples_batch")
     if not result:
-        st.caption("Use as fixtures preenchidas para experimentar o fluxo. PDFs são catalogados, mas aguardam o adapter validado com amostras reais do Domínio.")
+        st.markdown("<div class='quiet-state'><strong>Ainda não há uma análise nesta tela.</strong><br>Use as fixtures preenchidas para experimentar o fluxo. PDFs são catalogados, mas aguardam um adaptador validado com amostras reais do Domínio.</div>", unsafe_allow_html=True)
         return
 
     summary = result["summary"]
